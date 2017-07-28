@@ -6,10 +6,10 @@
 <body>
 <div>
   <ul>
-    <li><a href="#">link</a></li>
-    <li><a href="#">link</a></li>
-    <li><a href="#">link</a></li>
-    <li><a href="#">link</a></li>
+    <li class="one"><a href="#">link</a></li>
+    <li class="two"><a href="#">link</a></li>
+    <li class="three"><a href="#">link</a></li>
+    <li class="four"><a href="#">link</a></li>
   </ul>
 </div>
 <script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -19,6 +19,21 @@
 
   //selects the third li
   jQuery('li:eq(1)').next();
+
+  //selects the third li
+  jQuery('li:eq(1)').prev();
+
+  //selects the ul
+  jQuery('li:eq(1)').parent();
+
+  //selects all li's
+  jQuery('li:eq(1)').parent().children();
+
+  //selects all li's after the second li
+  jQuery('li:eq(1)').nextAll();
+
+  //selects all li's before the second li
+  jQuery('li:eq(1)').prevAll();
 </script>
 </body>
 </html>
